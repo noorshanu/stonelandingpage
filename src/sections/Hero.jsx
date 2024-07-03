@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="relative z-10 overflow-hidden bg-[#e39847] h-full  sm:h-[100%] mt-4">
+    <section className="relative z-10 overflow-hidden  h-full  sm:h-[100%] mt-4">
       <div className="container-wrapper    justify-center mx-auto  pb-12 items-center ">
         <h1 className=" text-white text-4xl text-center font-bold">A crypto wallet & gateway to blockchain apps</h1>
         <p className=" text-base font-medium text-center text-white py-1">
