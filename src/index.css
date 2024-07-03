@@ -66,6 +66,10 @@ background-repeat: no-repeat;
 background-position: top;
 background-size: cover;
 }
+.btn-m{
+
+  background: linear-gradient(0deg, #7899CD 0%, #3F577A 100%);
+}
 .black-screen {
   position: fixed;
   top: 0;

@@ -15,7 +15,7 @@ function NewsLetter() {
             Sign up to receive updates and announcements
             </p>
          <div className=' flex justify-center'>
-         <a href="/" className=' px-4 bg-[#000] py-1 font-medium text-lg text-white rounded-full text-center mx-auto  '>
+         <a href="/" className=' px-6 btn-m py-2 font-medium text-4xl text-white rounded-full text-center mx-auto  '>
             Sign Up
             </a>
          </div>
