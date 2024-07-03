@@ -21,18 +21,18 @@ function Navbar() {
 
         {/* Navigation menu */}
         <div className="hidden md:flex flex-grow justify-center w-1/2">
-          <a href="/" className="text-black font-bold text-lg px-3 py-2">
-            Home
+          <a href="/" className="text-white font-medium text-lg px-3 py-2">
+          Features
           </a>
-          <a href="#about" className="text-black font-bold text-lg px-3 py-2">
-            About
+          <a href="#about" className="text-white font-medium text-lg px-3 py-2">
+          Build
           </a>
-          <a href="#col" className="text-black font-bold text-lg px-3 py-2">
-            Tokenomics
+          <a href="#col" className="text-white font-medium text-lg px-3 py-2">
+          Resources
           </a>
 
-          <a href="#contact" className="text-black font-bold text-lg px-3 py-2">
-            Contact Us
+          <a href="#contact" className="text-white font-medium text-lg px-3 py-2">
+          Learn
           </a>
           <div className="md:flex items-center">
           <div className=" flex items-center gap-4 text-white  ml-5">
@@ -40,19 +40,12 @@ function Navbar() {
               href="https://x.com/"
               rel="noreferrer"
               target="_blank"
-              className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
+              className=" px-6 btn-m py-1 font-medium text-lg text-white rounded-full text-center mx-auto"
             >
-              <BsTwitter />
+             Download
             </a>
 
-            <a
-              href="https://t.me/"
-              target="_blank"
-              rel="noreferrer"
-              className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
-            >
-              <FaTelegram />
-            </a>
+         
           </div>
         </div>
 
@@ -100,20 +93,20 @@ function Navbar() {
           >
             <a
               href="/"
-              className="text-black font-bold text-lg block px-3 py-2"
+              className="text-black font-medium text-lg block px-3 py-2"
             >
               Home
             </a>
 
             <a
               href="#about"
-              className="text-black font-bold text-lg block px-3 py-2"
+              className="text-black font-medium text-lg block px-3 py-2"
             >
               About
             </a>
             <a
               href="#col"
-              className="text-black font-bold text-lg block px-3 py-2"
+              className="text-black font-medium text-lg block px-3 py-2"
             >
               Features
             </a>
