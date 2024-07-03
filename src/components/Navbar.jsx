@@ -1,133 +1,144 @@
-import { useState } from "react";
-import { IoClose, IoMenu } from "react-icons/io5";
-import { Link } from "react-scroll";
+import React, { useState } from "react";
+import { Transition } from "@headlessui/react";
+import { BsTwitter, BsInstagram, BsFacebook } from "react-icons/bs";
+import { FaLinkedinIn, FaTelegram } from "react-icons/fa6";
 
 function Navbar() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
-      <nav className="z-[100]  sm:mt-0 bg-[#182D4D] backdrop-blur-lg  ">
-        <div  data-aos="fade-up"
-            data-aos-offset="300"
-            data-aos-duration="1500"
-            data-aos-easing="ease-in-sine" className="container-wrapper border-none sm:border-2 border-[#fff] h-20 lg:h-[5rem] 2xl:h-20 rounded-2xl flex justify-between lg:justify-normal lg:grid lg:grid-cols-[1fr_16rem_1fr] gap-8 items-center">
-          <div className="items-center justify-evenly text-base font-medium text-white hidden lg:flex">
-            <a
-              href="#about"
-              onClick={() => setSidebarOpen(false)}
-              className="cursor-pointer text-sm sm:text-xl uppercase font-dream text-black"
-            >
-              About us
-            </a>
+    <nav className=" bg-[#182D4D] py-2   w-full z-40">
+      <div className="max-w-7xl mx-auto  flex justify-between items-center  rounded-full px-4 py-1 box-s2">
+        {/* Logo */}
+        <div className=" mr-6 w-1/2">
+          <a
+            href="/"
+            className=""
+          >
+            <img src="images/logo.png" className="" alt=" Logo" />
+          </a>
+        </div>
 
-            <a
-              href="#token"
-              onClick={() => setSidebarOpen(false)}
-              className="cursor-pointer text-sm sm:text-xl uppercase font-dream text-black"
-            >
-              Tokenomics
-            </a>
-          </div>
-
-          <a href="/">
-            <img
-              src="/images/logo.png"
-              className="h-[110px] sm:h-[100px] w-auto mx-auto"
-              alt=""
-            />
+        {/* Navigation menu */}
+        <div className="hidden md:flex flex-grow justify-center w-1/2">
+          <a href="/" className="text-black font-bold text-lg px-3 py-2">
+            Home
+          </a>
+          <a href="#about" className="text-black font-bold text-lg px-3 py-2">
+            About
+          </a>
+          <a href="#col" className="text-black font-bold text-lg px-3 py-2">
+            Tokenomics
           </a>
 
-          <div className=" flex lg:hidden">
-            <div className="flex items-center gap-5 justify-center lg:justify-end">
-              <a href="https://t.me/Pugcoinonsolana" target="_blank" rel="noreferrer">
-                <img src="TELEGRAM.png" alt="" className="w-auto h-[40px]" />
-              </a>
-
-              <a
-                href="https://x.com/Pugcoinonsolana"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img src="X.png" alt="" className="w-auto h-[40px]" />
-              </a>
-            </div>
-          </div>
-
-          <div className="items-center justify-evenly text-base font-medium text-white hidden lg:flex">
+          <a href="#contact" className="text-black font-bold text-lg px-3 py-2">
+            Contact Us
+          </a>
+          <div className="md:flex items-center">
+          <div className=" flex items-center gap-4 text-white  ml-5">
             <a
-              href="#road"
-              onClick={() => setSidebarOpen(false)}
-              className="cursor-pointer text-sm sm:text-xl uppercase font-dream text-black "
+              href="https://x.com/"
+              rel="noreferrer"
+              target="_blank"
+              className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
             >
-              Roadmap
+              <BsTwitter />
             </a>
 
             <a
-              href="#contact"
-              onClick={() => setSidebarOpen(false)}
-              className="cursor-pointer text-sm sm:text-xl uppercase font-dream text-black "
+              href="https://t.me/"
+              target="_blank"
+              rel="noreferrer"
+              className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
             >
-              Conatct Us
+              <FaTelegram />
             </a>
           </div>
         </div>
-      </nav>
 
-      <div
-        className={`fixed top-0 right-0 w-[16rem] h-screen z-[10000] bg-white border-l-4 border-primary pt-6 px-8 transition-all duration-300 ${
-          sidebarOpen ? "translate-x-0" : "translate-x-[16rem]"
-        }`}
-      >
-        <div className="flex items-center justify-between mb-8 z-50">
-          <img src="/images/logo.png" className="w-full max-w-[9rem]" alt="" />
+      
+        </div>
 
-          <button className="text-black text-2xl" onClick={toggleSidebar}>
-            <IoClose />
+        {/* Hamburger menu for mobile */}
+        <div className="md:hidden">
+          <button
+            className="text-white focus:outline-none"
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <svg
+              className="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
           </button>
-        </div>
-
-        <div className="space-y-5 flex flex-col text-left items-start text-black font-medium">
-          {/* <Link
-            to="/"
-            onClick={() => setSidebarOpen(false)}
-            className="cursor-pointer text-sm xl:text-base"
-          >
-           BUY NOW
-          </Link> */}
-          {/* <Link
-            to="#"
-            onClick={() => setSidebarOpen(false)}
-            className="cursor-pointer text-sm xl:text-base"
-          >
-            WHITEPAPER
-          </Link> */}
-          {/* <Link
-            to="roadmap"
-            onClick={() => setSidebarOpen(false)}
-            className="cursor-pointer text-sm xl:text-base"
-          >
-            ROADMAP
-          </Link> */}
-          {/* <Link
-            to="tokenomics"
-            onClick={() => setSidebarOpen(false)}
-            className="cursor-pointer text-sm xl:text-base"
-          >
-            TOKENOMICS
-          </Link> */}
         </div>
       </div>
 
-      <div
-        className={`black-screen z-[900] ${sidebarOpen ? "show" : ""}`}
-        onClick={toggleSidebar}
-      ></div>
-    </>
+      {/* Mobile menu */}
+      <Transition
+        show={isOpen}
+        enter="transition ease-out duration-100 transform"
+        enterFrom="opacity-0 scale-95"
+        enterTo="opacity-100 scale-100"
+        leave="transition ease-in duration-75 transform"
+        leaveFrom="opacity-100 scale-100"
+        leaveTo="opacity-0 scale-95"
+      >
+        {(ref) => (
+          <div
+            ref={ref}
+            className="md:hidden bg-white rounded-2xl border-2 border-[#000] px-2 pt-2 pb-3 space-y-1 m-4"
+          >
+            <a
+              href="/"
+              className="text-black font-bold text-lg block px-3 py-2"
+            >
+              Home
+            </a>
+
+            <a
+              href="#about"
+              className="text-black font-bold text-lg block px-3 py-2"
+            >
+              About
+            </a>
+            <a
+              href="#col"
+              className="text-black font-bold text-lg block px-3 py-2"
+            >
+              Features
+            </a>
+
+            <div className=" flex items-center gap-4 text-white mb-6 ml-5">
+              <a
+                href="https://x.com/"
+                className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
+              >
+                <BsTwitter />
+              </a>
+
+              <a
+                href="https://t.me/"
+                target="_blank"
+                rel="noreferrer"
+                className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
+              >
+                <FaTelegram />
+              </a>
+            </div>
+          </div>
+        )}
+      </Transition>
+    </nav>
   );
 }
 
