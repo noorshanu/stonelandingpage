@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 function NFTs() {
   return (
-    <section className=" py-8  backdrop-blur-lg  ">
+    <section className=" py-8  backdrop-blur-lg bg-m2 ">
       <div className=" container-wrapper ">
         <div className=" flex justify-evenly items-center ">
           <div className=" w-1/2">

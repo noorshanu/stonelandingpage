@@ -45,14 +45,22 @@
 
   html,
   body {
-    @apply bg-[#000000] text-white;
+    @apply  text-white;
   }
 
   .container-wrapper {
     @apply max-w-[1124px] w-[95%] mx-auto;
   }
 }
-
+.bg-m{
+  background-image: url('../public//images//stars.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-m2{
+  background: rgb(44,64,92);
+background: linear-gradient(0deg, rgba(44,64,92,1) 0%, rgba(37,52,74,1) 100%);
+}
 .black-screen {
   position: fixed;
   top: 0;
@@ -67,6 +75,10 @@
 .black-screen.show {
   opacity: 1;
   pointer-events: visible;
+}
+body{
+  background: rgb(36,66,114);
+background: linear-gradient(180deg, rgba(36,66,114,1) 0%, rgba(35,47,66,1) 20%, rgba(58,84,124,1) 100%);
 }
 
 .white-shadow {
