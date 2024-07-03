@@ -53,13 +53,18 @@
   }
 }
 .bg-m{
-  background-image: url('../public//images//stars.png');
+  background-image: url('../public//images/stars.png');
   background-repeat: no-repeat;
+  background-position: top;
   background-size: cover;
 }
 .bg-m2{
   background: rgb(44,64,92);
 background: linear-gradient(0deg, rgba(44,64,92,1) 0%, rgba(37,52,74,1) 100%);
+background-image: url('../public//images/bg-m.png');
+background-repeat: no-repeat;
+background-position: top;
+background-size: cover;
 }
 .black-screen {
   position: fixed;
@@ -93,7 +98,21 @@ background: linear-gradient(180deg, rgba(36,66,114,1) 0%, rgba(35,47,66,1) 20%, 
   background-repeat: no-repeat;
   background-size: cover;
 }
+.img-hov:hover{
+  animation: rotate 1s linear;
+}
 
+@keyframes rotate{
+  0%{
+      transform: rotate(0deg);
+  }
+  50%{
+      transform: rotate(180deg);
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
 /* KEYFRAMES */
 
 @-webkit-keyframes animateCloud {

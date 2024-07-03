@@ -15,7 +15,7 @@ function Hero() {
           className=" text-center  text-xl flex items-center gap-4 bg-[#376aa6] px-2 py-1 rounded-full border-2 "
         >
           Downnload for{" "}
-          <img src="images/crome.png" alt="" className=" h-[30px]" />
+          <img src="images/crome.png" alt="" className=" h-[30px] img-hov" />
         </a>
       </div>
     </section>
