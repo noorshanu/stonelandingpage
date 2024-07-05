@@ -5,9 +5,11 @@ function NFTs() {
   return (
     <section className=" py-8  backdrop-blur-lg bg-m2 ">
       <div className=" container-wrapper ">
-        <div className=" flex justify-evenly items-center ">
-          <div className=" w-1/2">
-            <h1 className=" text-white font-bold text-2xl py-4">Buy, store, send and swap tokens</h1>
+        <div className=" flex justify-evenly flex-col sm:flex-row items-center ">
+          <div className=" w-full sm:w-1/2">
+            <h1 className=" text-white font-bold text-2xl py-4">
+              Buy, store, send and swap tokens
+            </h1>
 
             <p className=" text-white text-lg">
               Available as a browser extension and as a mobile app, Stone Wallet
@@ -15,18 +17,20 @@ function NFTs() {
               exchange—everything you need to manage your digital assets.
             </p>
           </div>
-          <div className=" w-1/2">
+          <div className=" w-full sm:w-1/2">
             <img src="images/coin.png" alt="" className=" " />
           </div>
           <div></div>
         </div>
 
-        <div className=" flex justify-evenly items-center ">
-        <div className=" w-1/2">
+        <div className=" flex justify-evenly items-center flex-col-reverse sm:flex-row ">
+          <div className=" w-full sm:w-1/2">
             <img src="images/map.png" alt="" className=" " />
           </div>
-          <div className=" w-1/2">
-            <h1 className=" text-white font-bold text-2xl py-4">Buy, store, send and swap tokens</h1>
+          <div className=" w-full sm:w-1/2">
+            <h1 className=" text-white font-bold text-2xl py-4">
+              Buy, store, send and swap tokens
+            </h1>
 
             <p className=" text-white text-lg">
               Available as a browser extension and as a mobile app, Stone Wallet
@@ -34,15 +38,15 @@ function NFTs() {
               exchange—everything you need to manage your digital assets.
             </p>
           </div>
-        
+
           <div></div>
         </div>
 
-
-
-        <div className=" flex justify-evenly items-center ">
-          <div className=" w-1/2">
-            <h1 className=" text-white font-bold text-2xl py-4">Buy, store, send and swap tokens</h1>
+        <div className=" flex justify-evenly items-center flex-col sm:flex-row ">
+          <div className=" w-full sm:w-1/2">
+            <h1 className=" text-white font-bold text-2xl py-4">
+              Buy, store, send and swap tokens
+            </h1>
 
             <p className=" text-white text-lg">
               Available as a browser extension and as a mobile app, Stone Wallet
@@ -50,7 +54,7 @@ function NFTs() {
               exchange—everything you need to manage your digital assets.
             </p>
           </div>
-          <div className=" w-1/2">
+          <div className=" w-full sm:w-1/2">
             <img src="images/guard.png" alt="" className=" " />
           </div>
           <div></div>

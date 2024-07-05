@@ -29,7 +29,7 @@ function App() {
         </div>
 
         <div className="my-4" id="about" >
-          <About />
+          {/* <About /> */}
         </div>
       
 
@@ -38,7 +38,7 @@ function App() {
      
 
 
-        <div>
+        <div className=" py-10 sm:py-24">
           <NewsLetter/>
         </div>
       </main>

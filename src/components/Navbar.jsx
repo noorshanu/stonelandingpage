@@ -95,38 +95,31 @@ function Navbar() {
               href="/"
               className="text-black font-medium text-lg block px-3 py-2"
             >
-              Home
+              Features
             </a>
 
             <a
               href="#about"
               className="text-black font-medium text-lg block px-3 py-2"
             >
-              About
+              Build
             </a>
             <a
               href="#col"
               className="text-black font-medium text-lg block px-3 py-2"
             >
-              Features
+             Resources
             </a>
 
             <div className=" flex items-center gap-4 text-white mb-6 ml-5">
-              <a
-                href="https://x.com/"
-                className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
-              >
-                <BsTwitter />
-              </a>
-
-              <a
-                href="https://t.me/"
-                target="_blank"
-                rel="noreferrer"
-                className=" text-xl text-black bg-white hover:bg-[#1a4093] rounded-full p-2 border-2 border-[#000]  hover:text-[#fff]"
-              >
-                <FaTelegram />
-              </a>
+            <a
+              href="https://x.com/"
+              rel="noreferrer"
+              target="_blank"
+              className=" px-6 btn-m py-1 font-medium text-lg text-white rounded-full text-center mx-auto"
+            >
+             Download
+            </a>
             </div>
           </div>
         )}
